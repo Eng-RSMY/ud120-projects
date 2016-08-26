@@ -38,8 +38,8 @@ labels_pred = clf.predict(features_test)
 t2 = time()
 accuracy = accuracy_score(labels_test, labels_pred)
 print('accuracy score is: ', accuracy)
-print('training took {0:.3f} seconds', t1-t0)
-print('predicting took {0:.3f} seconds', t2-t1)
+print('training took {0:.3f} seconds'.format(t1-t0))
+print('predicting took {0:.3f} seconds'.format(t2-t1))
 #########################################################
 
 
