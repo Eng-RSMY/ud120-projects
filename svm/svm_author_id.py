@@ -23,7 +23,7 @@ data_shrink_factor = 100
 # labels_train = labels_train[:len(labels_train)//data_shrink_factor]
 
 
-for item in [10000]:
+for item in [10, 100, 100, 10000]:
     cvalue = item
     clf = SVC(kernel='rbf', C=cvalue)
 
