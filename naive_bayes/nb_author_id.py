@@ -25,8 +25,6 @@ from sklearn.metrics import accuracy_score
 ### labels_train and labels_test are the corresponding item labels
 features_train, features_test, labels_train, labels_test = preprocess()
 
-
-
 #########################################################
 ### your code goes here ###
 t0 = time()
@@ -38,8 +36,8 @@ labels_pred = clf.predict(features_test)
 t2 = time()
 accuracy = accuracy_score(labels_test, labels_pred)
 print('accuracy score is: {0:.4f}'.format(accuracy))
-print('training took {0:.4f} seconds'.format(t1-t0))
-print('predicting took {0:.4f} seconds'.format(t2-t1))
+print('training took {0:.2f} seconds'.format(t1-t0))
+print('predicting took {0:.2f} seconds'.format(t2-t1))
 #########################################################
 
 
